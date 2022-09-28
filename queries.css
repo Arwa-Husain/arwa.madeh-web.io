@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    #window {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+}
+ 
+@media (min-width: 768.1px) {
+    #window {
+        width: 50%;
+        height: auto;
+        padding-top: 20px;
+    }
+}
+ 
+.text-center {
+    padding-top: 30px;
+}
+ 

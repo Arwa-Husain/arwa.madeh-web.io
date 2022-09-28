@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/f7ec7d9a16.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">
+                <img src="images/Arwa Bhabhi work-03-03.png" alt="" width="45" height="44">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5" aria-current="page" href="home.html" style="color: #307513;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="home.html" style="color: #307513;">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="compose.html" style="color: #307513;">Compose/Edit</a>
+                  </li>
+                </ul>
+                
+                  <div class="nav-item dropdown justify-content-end">
+                    <a class="nav-link " href="javascript:void(0)"id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="fas fa-user"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">My Profile</a></li>
+                      <li><a class="dropdown-item" href="#">My Compostions</a></li>
+                      <li><a class="dropdown-item" href="#">LogOut</a></li>
+                    </ul>
+                  </div>
+                
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleIndicators" class="carousel slide mt-3 data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/poetry.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <div class="content2">
+                    <label for="ocassion" class="fw-bolder fs-2  mb-3"> Select Your Ocassion </label>
+                    <select id="select_value" placeholder="Select Ocassion" class=" mb-3 ps-2 pb-1">
+                      <option selected hidden> select</option>
+                      <option value="1" >
+                        Milaad 
+                      </option>
+                      <option value="2" > Ashara </option>
+                    </select>
+                  </div>
+                  <div class="demo">
+                    <button class="select mb-3 px-4"  onclick="showcontent()" value="Continue"> Select </button>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <form class="row mt-3 selection g-3 needs-validation" novalidate" style="display: none;">
+            <div class="col-4 text-center">
+              <label for="validationCustom01" class="form-label">Language Preference</label>
+              <select class="form-select" aria-label="Default select example" id="Language" name="Language" required>
+                <option selected hidden>Language Preference</option>
+                <option value="1">Lisan u Dawat</option>
+                <option value="2">Arabic</option>
+                <option value="3">Urdu</option>
+              </select>
+              <div>
+                <p class="verify" style="display: none;">Please provide a valid city.</p> 
+               </div>
+            </div>
+            <div class="col-4 text-center">
+              <label for="validationCustom01" class="form-label">Lehen Preference</label>
+              <select class="form-select" style="font-family: 'Al-kanz'; direction: rtl;" aria-label="Default select example" id="Lehen" name="Lehen" required >
+                <option selected hidden>Lehen Preference</option>
+                <option value="1.A" >لاكهو جاطط سي فداء تهئي جاؤطط</option>
+                <option value="2.B" >البحر الكامل</option>
+                <option value="2.C" >البحر الطويل</option>
+                <option value="2.D" >البحر البسيط</option>
+              </select>
+              <div>
+                <p class="verify" style="display: none;">Please provide a valid city.</p> 
+               </div>
+            </div>
+            <div class="col-4 text-center">
+              <label for="validationCustom01" class="form-label">Qafiayh Preference</label>
+              <select class="form-select" style="font-family: 'Al-kanz'; direction: rtl;" aria-label="Default select example" id="qafiyah" name="qafiyah" required>
+                <option selected hidden>Qafiyah Preference </option>
+                <option value="1.A" >سلامة</option>
+                <option value="1.A" >نمايا</option>
+                <option value="2.B" >انور</option>
+                <option value="2.C" >درجات</option>
+                <option value="2.D" >غافر</option>
+              </select>
+              <div>
+               <p class="verify" style="display: none;">Please provide a valid city.</p> 
+              </div>
+            </div>
+          </form>
+          <div class=" row mt-3 justify-content-center selection text-center" style="display: none;">
+            <div class="col-4  proceed">
+              <label for="ocassion"> Click Here To Proceed </label>
+              <button type="submit" class="select2" id="proceed" onclick="getval()"  value="Continue"> Proceed </button>
+            </div>
+          </div>
+          <div class="card mt-3">
+              <div class="row justify-content-between mx-3 mt-2">
+                <div class="col-4"><p>&copy copyrights 2022 Insha un Nazm</p></div> 
+            
+                <div class="col-4"><p class="text-end"> A Projecct Of Dirasat Khasa</p></div>
+
+              </div>          
+          </div>
+    </div>
+</body>
+<script>
+
+  // dynamic dropdown
+$("#Lehen").val([]);
+$('#Lehen option').hide();
+$("#Language").on("change", function() {
+  $('#Lehen option')
+    .hide() // hide all
+    .filter('[value^="' + $(this).val() + '"]') // filter options with required value
+    .show(); // and show them
+
+  $("#Lehen").val([]);
+
+})
+  $("#qafiyah").val([]);
+  $('#qafiyah option').hide();
+
+  $("#Lehen").on("change", function() {
+  $('#qafiyah option')
+    .hide() // hide all
+    .filter('[value^="' + $(this).val() + '"]') // filter options with required value
+    .show(); // and show them
+
+  $("#qafiyah").val([]);
+});
+
+// validation
+
+//  (function () {
+//   'use strict'
+
+//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//   var forms = document.querySelectorAll('.needs-validation')
+
+//   // Loop over them and prevent submission
+//   Array.prototype.slice.call(forms)
+//     .forEach(function (form) {
+//       form.addEventListener('submit', function (event) {
+//         if (!form.checkValidity()) {
+//           event.preventDefault()
+//           event.stopPropagation()
+//         }
+
+//         form.classList.add('was-validated')
+//       }, false)
+//     })
+// })()
+
+</script>
