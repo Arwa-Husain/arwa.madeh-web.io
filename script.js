@@ -1,9 +1,4 @@
-
-
-
-
 // select button and show selection options 
-
 function showcontent(){
   var sel = document.getElementById('select_value');
 
@@ -20,26 +15,26 @@ function showcontent(){
     }
 }
 
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  function verify () {
-    'use strict'
+  // // Example starter JavaScript for disabling form submissions if there are invalid fields
+  // function verify () {
+  //   'use strict'
   
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
+  //   // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  //   var forms = document.querySelectorAll('.needs-validation')
   
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
+  //   // Loop over them and prevent submission
+  //   Array.prototype.slice.call(forms)
+  //     .forEach(function (form) {
+  //       form.addEventListener('submit', function (event) {
+  //         if (!form.checkValidity()) {
+  //           event.preventDefault()
+  //           event.stopPropagation()
+  //         }
   
-          form.classList.add('was-validated')
-        }, false)
-      })
-  }
+  //         form.classList.add('was-validated')
+  //       }, false)
+  //     })
+  // }
 // pro// var steps = document.getElementsByClassName('form-select');
     // if (steps.option == " " ){
     //   alert("Please Select");
@@ -114,7 +109,20 @@ function getval(){
 
 
 
+// mapping for qafiyahs 
 
+
+var LSDqafiyah = {
+  "سلامة" : [ "رحمة", "بركة" , "ضيافة", "شفاعة", "راحة", "نهاية", "ولاية", "براعة", "سلامة", "حلاوة", "عبادة", "تلاوة", "فصاحة", "وراثة", "حفاظة",],
+
+  "فداء" : [ "رضى","خدا" ,"سدا" ,"اداء" ,"بقاء"  ,"شفاء"  ,"دعاء"  ,"ولاء"  ,"جزاء"  ,"اولياء"  ,"دواء"  ,"مرتضى"  ,"فاطمة"  ,"مصطفى" ],
+};
+
+  
+  
+
+
+  
 
 
 
