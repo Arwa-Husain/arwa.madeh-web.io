@@ -92,35 +92,36 @@ function showcontent(){
 // validation for proceed button 
 
 function getval(){
+  $('#lang-error')[0].innerHTML=''
+  $('#lehn-error')[0].innerHTML=''
+  $('#qafya-error')[0].innerHTML=''
+
+  const errors={};
   var sel = document.getElementById('select_value');
 
   var lang = document.getElementById('Language').value;
   var lehn = document.getElementById('Lehen').value;
   var qafya = document.getElementById('qafiyah').value;
 
-  if(lang == "" || lehn== "" || qafya == ""){
-    window.alert("please select an option");
+  if(!lang){
+    errors.lang="Please select language";
+    $('#lang-error')[0].innerHTML=errors.lang
+  }
+  if(!lehn){
+    errors.lehn="Please select lehn";
+    $('#lehn-error')[0].innerHTML=errors.lehn
+  }
+  if(!qafya){
+    errors.qafya="Please select qafiyah";
+    $('#qafya-error')[0].innerHTML=errors.qafya
+  }
+
+  if(Object.keys(errors).length){
     return;
+  };
+
+  window.location.href = `milaad.html?lang=${lang}&&lehn=${lehn}&&qafya=${qafya}`;
 }
-  else if(sel.value == "1"){
-  window.location.href = "milaad.html";
-}
-}
-
-
-
-// mapping for qafiyahs 
-
-
-var LSDqafiyah = {
-  "سلامة" : [ "رحمة", "بركة" , "ضيافة", "شفاعة", "راحة", "نهاية", "ولاية", "براعة", "سلامة", "حلاوة", "عبادة", "تلاوة", "فصاحة", "وراثة", "حفاظة",],
-
-  "فداء" : [ "رضى","خدا" ,"سدا" ,"اداء" ,"بقاء"  ,"شفاء"  ,"دعاء"  ,"ولاء"  ,"جزاء"  ,"اولياء"  ,"دواء"  ,"مرتضى"  ,"فاطمة"  ,"مصطفى" ],
-};
-
-  
-  
-
 
   
 
