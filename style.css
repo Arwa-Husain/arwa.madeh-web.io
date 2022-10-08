@@ -40,6 +40,7 @@ body {
 /* about us - first para */
 .h4{
     line-height: 200%;
+    word-spacing: 15px;
 }
 .h5{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -112,4 +113,12 @@ body {
 }
 .error{
     color: red;
+}
+#mafaheem .col-md-4, #mafaheem .col-md-3{
+    /* box-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7); */
+    background-color: rgba(218, 165, 32, 0.766);
+    opacity: 0.8;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    color: #307513;
 }
