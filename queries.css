@@ -17,4 +17,13 @@
 .text-center {
     padding-top: 30px;
 }
- 
+@media (max-width:768px){
+    .small_devices{
+        display: flex;
+    };
+}
+@media (max-width:768px){
+    .project{
+        float: left;
+    }
+}

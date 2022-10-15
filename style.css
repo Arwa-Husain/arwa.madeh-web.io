@@ -92,12 +92,23 @@ body {
     color: #307513;
     border: goldenrod;
 }
-.save button{
+.save {
     background-color: rgba(218, 165, 32, 0.766);
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
     border: 1px solid white;
     color: #307513;
     font-size: x-large;
+}
+.error{
+    color: red;
+}
+#mafaheem .col-md-4, #mafaheem .col-md-3 {
+    /* box-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7); */
+    background-color: rgba(218, 165, 32, 0.766);
+    opacity: 0.8;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    color: #307513;
 }
 /* milad page change qafiyia button */
 .change button{
@@ -111,14 +122,23 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #307513;
 }
-.error{
-    color: red;
+/* input foeld color change */
+.input-group input{
+    opacity: 0.5;
+    border: 5px solid rgba(218, 165, 32, 0.766);
 }
-#mafaheem .col-md-4, #mafaheem .col-md-3{
-    /* box-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7); */
+/* add and remove buttons styling */
+.add-field{
     background-color: rgba(218, 165, 32, 0.766);
-    opacity: 0.8;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
-    border: 2px solid white;
+    border: 1px solid white;
     color: #307513;
+    font-size: x-large;
+}
+.remove-field{
+    background-color: rgba(218, 165, 32, 0.766);
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    color: #307513;
+    font-size: x-large;
 }
